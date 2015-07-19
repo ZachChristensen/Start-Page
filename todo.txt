@@ -1,3 +1,2 @@
 todo:
-search bar
-site names and addresses as variables in the js
+Nothing currently but more features might be added in the future.

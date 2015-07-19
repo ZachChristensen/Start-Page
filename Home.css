@@ -4,29 +4,53 @@ body{
 	background-size:cover
 }
 
+input{
+    width:100%;
 
-.table table{
-	margin:0 auto;
 }
 
+.table{
+    margin:0;
+    width:612px;/*This is exactly how wide the contents should be*/
+    overflow: auto;
+}
 
+tbody{
+    margin:0;
+    padding:0;
+}
+
+#hide{
+    display:none;
+}
+
+#searchbox{
+    font-size:1.2em;
+	font-family: Calibri, sans-serif;
+    color:#222;
+    width:602px;
+    margin-bottom:6px;
+    margin-left:2px;
+}
 
 .table a{
-	font-size:1.1em;
+	font-size:1.2em;
 	font-family: Calibri, sans-serif;
 	text-decoration: none; 
 	font-weight: normal;
-	padding: .6em; 
+	padding: 14px; 
 	display:block;
-	width:100%;
 	height:100%;
-	color:white;
+	color:#fff;
 }
 
-.table td{
+
+.table div{
+    margin:1px 2px;
+    float:left;
 	opacity: 0.8;
 	background-color: #2165B2;/*blue*/
-	width: 12em;
+	width: 200px;
 	display: inline-block;
 	vertical-align: middle;
 	-webkit-transform: translateZ(0);
@@ -40,10 +64,9 @@ body{
 	transition-property: color;
 	-webkit-transition-duration: 0.3s;
 	transition-duration: 0.3s;
-	color: #FFFFFF;
 }
 
-.table td:before {
+.table div:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -64,11 +87,11 @@ body{
   transition-timing-function: ease-out;
 }
 
-.table td a:hover , .table td:focus, .table td:active {
+.table div a:hover , .table div:focus, .table div:active {
   color: black;
 }
 
-.table td:hover:before, .table td:focus:before, .table td:active:before {
+.table div:hover:before, .table div:focus:before, .table div:active:before {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
@@ -91,5 +114,7 @@ body{
 .inner {
 	margin-left: auto;
 	margin-right: auto; 
-	width:600px; /*whatever width you want*/
+    width: -moz-fit-content;
+    width: -webkit-fit-content;
+	/*width:36em; /*whatever width you want*/
 }
