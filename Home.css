@@ -1,0 +1,95 @@
+body{ 
+	background:url(city.jpg) top left no-repeat; 
+	background-attachment:fixed; 
+	background-size:cover
+}
+
+
+.table table{
+	margin:0 auto;
+}
+
+
+
+.table a{
+	font-size:1.1em;
+	font-family: Calibri, sans-serif;
+	text-decoration: none; 
+	font-weight: normal;
+	padding: .6em; 
+	display:block;
+	width:100%;
+	height:100%;
+	color:white;
+}
+
+.table td{
+	opacity: 0.8;
+	background-color: #2165B2;/*blue*/
+	width: 12em;
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	position: relative;
+	-webkit-transition-property: color;
+	transition-property: color;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	color: #FFFFFF;
+}
+
+.table td:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #A5FF79;/*green*/
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.table td a:hover , .table td:focus, .table td:active {
+  color: black;
+}
+
+.table td:hover:before, .table td:focus:before, .table td:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.outer {
+	display: table;
+	left:0px;
+	top:35%;
+	position: absolute;
+	height: 65%;
+	width: 100%;
+	
+}
+
+.middle {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.inner {
+	margin-left: auto;
+	margin-right: auto; 
+	width:600px; /*whatever width you want*/
+}

@@ -1,0 +1,3 @@
+todo:
+search bar
+site names and addresses as variables in the js
