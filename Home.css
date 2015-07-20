@@ -6,7 +6,7 @@ body{
 
 input{
     width:100%;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .table{
@@ -26,9 +26,9 @@ tbody{
 
 #notes{
     resize:none;
-    width:598px;
+    width:594px;
     height:6em;
-    padding:5px;
+    padding:5px 7px;
     margin-top:6px;
     margin-left:2px;
     font-size:1.2em;
@@ -38,7 +38,7 @@ tbody{
     background-repeat: no-repeat;
     background-position: right bottom; 
     border:none;
-    color:#222;
+    color:#ddd;
 }
 
 #searchbox{
