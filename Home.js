@@ -1,10 +1,22 @@
+var notesElement = document.getElementById("notes");
+
+$( document ).ready(function() {
+    notesElement.value = localStorage.getItem('note');
+    console.log( "ready!" );
+});
+
+$(window).on("beforeunload", function() { 
+    localStorage.setItem('note', notesElement.value);
+    
+});
+
 var link1 = document.getElementById("link1");
 link1.innerHTML = "4chan /m/";
 link1.href = "http://boards.4chan.org/m/";
  
 var link2 = document.getElementById("link2");
-link2.innerHTML = "8chan /m/";
-link2.href = "http://8ch.net/m/";
+link2.innerHTML = "Godzilla Guide";
+link2.href = "file:///C:/Users/Zach/Pictures/Guides/1399743712041.jpg";
  
 var link3 = document.getElementById("link3");
 link3.innerHTML = "4chan /a/";

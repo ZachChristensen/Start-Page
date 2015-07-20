@@ -6,7 +6,7 @@ body{
 
 input{
     width:100%;
-
+    opacity: 0.8;
 }
 
 .table{
@@ -22,6 +22,23 @@ tbody{
 
 #hide{
     display:none;
+}
+
+#notes{
+    resize:none;
+    width:598px;
+    height:6em;
+    padding:5px;
+    margin-top:6px;
+    margin-left:2px;
+    font-size:1.2em;
+	font-family: Calibri, sans-serif;
+    background: rgba(33, 101, 178, 0.8);
+    background-image:url(notes.png);
+    background-repeat: no-repeat;
+    background-position: right bottom; 
+    border:none;
+    color:#222;
 }
 
 #searchbox{
@@ -48,8 +65,7 @@ tbody{
 .table div{
     margin:1px 2px;
     float:left;
-	opacity: 0.8;
-	background-color: #2165B2;/*blue*/
+	background-color: rgba(33, 101, 178, 0.8); /*#2165B2;blue*/
 	width: 200px;
 	display: inline-block;
 	vertical-align: middle;
@@ -74,7 +90,7 @@ tbody{
   left: 0;
   right: 0;
   bottom: 0;
-  background: #A5FF79;/*green*/
+  background: rgba(73, 158, 254, 0.8); /*#499EFE; /*Light Blue*/
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: 0 50%;
@@ -116,5 +132,4 @@ tbody{
 	margin-right: auto; 
     width: -moz-fit-content;
     width: -webkit-fit-content;
-	/*width:36em; /*whatever width you want*/
 }
