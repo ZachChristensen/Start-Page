@@ -1,3 +1,6 @@
+//Written by Zach Christensen
+
+//Notes
 var notesElement = document.getElementById("notes");
 
 $( document ).ready(function() {
@@ -10,6 +13,33 @@ $(window).on("beforeunload", function() {
     
 });
 
+
+//Time
+var timeElement = document.getElementById("time");
+var timeElement2 = document.getElementById("time2");
+
+var checkNumFormat = function (num) {
+    return num > 9 ? "" + num: "0" + num;
+};
+
+var updateTime = function () {
+    var dt = new Date(), time;
+    if (dt.getHours() >= 12){
+        time = (dt.getHours()-12) + ":" + checkNumFormat(dt.getMinutes());
+        timeElement2.innerHTML = "PM";
+    }
+    else{
+        time = (dt.getHours()) + ":" + checkNumFormat(dt.getMinutes());
+        timeElement2.innerHTML = "AM";
+    }
+
+    timeElement.innerHTML = time;
+};
+
+updateTime();
+window.setInterval(function(){updateTime();}, 4000);
+
+//Links
 var link1 = document.getElementById("link1");
 link1.innerHTML = "4chan /m/";
 link1.href = "http://boards.4chan.org/m/";

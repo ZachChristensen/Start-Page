@@ -1,3 +1,6 @@
+/*Written by Zach Christensen*/
+
+
 body{ 
 	background:url(city.jpg) top left no-repeat; 
 	background-attachment:fixed; 
@@ -7,6 +10,22 @@ body{
 input{
     width:100%;
     opacity: 0.9;
+}
+
+.centre{
+    text-align: center;
+}
+
+#time{
+    Color:#ddd;
+    margin:0;
+    Margin-bottom:12px;
+    font-size:3em;
+}
+
+#time2{
+    font-size:2em;
+    Color:#ddd;
 }
 
 .table{
