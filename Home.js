@@ -24,7 +24,7 @@ var checkNumFormat = function (num) {
 
 var updateTime = function () {
     var dt = new Date(), time;
-    if (dt.getHours() >= 12){
+    if (dt.getHours() > 12){
         time = (dt.getHours()-12) + ":" + checkNumFormat(dt.getMinutes());
         timeElement2.innerHTML = "PM";
     }
